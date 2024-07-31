@@ -1,0 +1,102 @@
+{
+    "name": "dark-matter",
+
+	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
+	"dockerComposeFile": "docker-compose.yml",
+
+	// The 'service' property is the name of the service for the container that VS Code should
+	// use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+	"service": "app",
+
+	// The 'workspaceFolder' property is the path VS Code should open by default when
+	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  "customizations": {
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {},
+
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": []
+    }
+  },
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
+
+	// Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Comment out to connect as root instead. To add a non-root user, see: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
+
+// {
+//   "dockerComposeFile": "docker-compose.yml",
+//   "service": "devcontainer",
+//   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+// }
+
+// // // For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// // // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+// // {
+// //   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+// //   "name": "my-simple-project",
+// //   "build": {
+// //     "dockerComposeFile": "docker-compose.yml",
+// //     "service": "devcontainer",
+// //     // "dockerfile": "Dockerfile",
+// //     "args": {
+// //       "VARIANT": "7",
+// //       "INSTALL_NODE": "true",
+// //       "NODE_VERSION": "lts/*"
+// //     },
+// //   },
+// //   "containerEnv": {
+// //     "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}",
+// //     "GITHUB_USER": "${localEnv:GITHUB_USER}"
+// //   },
+// //   "runArgs": ["--name=my-simple-project"],
+// //   "customizations": {
+// //     "vscode": {
+// //       "extensions": [
+// //         "davidanson.vscode-markdownlint",
+// //         "dbaeumer.vscode-eslint",
+// //         "esbenp.prettier-vscode",
+// //         "ms-azuretools.vscode-docker",
+// //         "timonwong.shellcheck",
+// //         "tyriar.sort-lines"
+// //         ],
+// //         "settings": {
+// //           "terminal.integrated.shell.linux": "/bin/zsh",
+// //           "php.validate.executablePath": "/usr/local/bin/php",
+// //           "editor.tabSize": 2
+// //         }
+// //       }
+// //     }
+// //   }
+
+
+// // // {
+// // //   "name": "Node.js & TypeScript",
+// // //   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+// // //   // "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm"
+
+// // //   "build": {
+// // //         "dockerfile": "Dockerfile"
+// // //     }
+// // //   // Features to add to the dev container. More info: https://containers.dev/features.
+// // //   // "features": {},
+
+// // //   // Use 'forwardPorts' to make a list of ports inside the container available locally.
+// // //   // "forwardPorts": [],
+
+// // //   // Use 'postCreateCommand' to run commands after the container is created.
+// // //   // "postCreateCommand": "yarn install",
+
+// // //   // Configure tool-specific properties.
+// // //   // "customizations": {},
+
+// // //   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+// // //   // "remoteUser": "root"
+// // // }
